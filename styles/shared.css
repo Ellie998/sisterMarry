@@ -1,0 +1,59 @@
+
+* {
+    font-family: 'Gowun Batang', serif;
+    text-align: center;
+    margin: 0;
+}
+
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: linear-gradient(0deg, #c3715100, rgba(250, 214, 161, 0.402),rgba(233, 109, 126, 0.269)); */
+    background-color: rgba(255, 255, 255, 0.278);
+}
+
+a {
+    text-decoration: none;
+    margin-left: 30px;
+  }
+
+header a {
+    color:rgb(44, 44, 44);
+}
+
+header h1 a {
+    color:rgb(44, 44, 44);
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-shadow: 4px 4px 4px rgba(240, 240, 237, 0.766);
+    font-weight: bold;
+
+}
+
+header nav a {
+    font-size: 20px;
+    border-radius: 4px;
+    padding: 12px 20px;
+    text-shadow: none;
+    display: inline-block;
+    width: 80px;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+
+}
+
+header nav a:hover {
+    background-color: rgba(86, 85, 85, 0.06);
+}
+
+
+
+
+/* footer {
+    padding: 70px;
+    background: linear-gradient(0deg, rgba(233, 109, 126,0.4), rgba(250, 215, 161,0.6),rgba(255, 255, 255, 0)); 
+
+} */
