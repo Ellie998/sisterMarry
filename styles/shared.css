@@ -1,10 +1,16 @@
-
-* {
+html {
     font-family: 'Gowun Batang', serif;
     text-align: center;
     margin: 0;
+
+    --color-grey-900: rgb(44, 44, 44);
+    --color-grey-700: rgb(84, 84, 84);
+
 }
 
+body {
+    margin: 0;
+}
 
 header {
     padding: 1.25rem;
@@ -21,11 +27,11 @@ a {
   }
 
 header a {
-    color:rgb(44, 44, 44);
+    color:var(--color-grey-900);
 }
 
 header h1 a {
-    color:rgb(44, 44, 44);
+    color:var(--color-grey-900);
     font-family: 'Dancing Script', cursive;
     font-size: 2rem;
     text-shadow: 4px 4px 4px rgba(240, 240, 237, 0.766);
@@ -33,31 +39,61 @@ header h1 a {
 
 }
 
+header nav {
+    display: none;
+    justify-content: space-between;
+}
+
 header nav a {
     font-size: 1rem;
     border-radius: 4px;
+    margin: 0;
     padding: 0.75rem 1.25rem;
     text-shadow: none;
     display: inline-block;
     width: 4rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
-
 }
 
 header nav a:hover {
     background-color: rgba(86, 85, 85, 0.06);
 }
 
+.menu-btn {    
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 1;
+    top: 0;
 
+}
+
+.menu-btn span {
+    width: 100%;
+    height: 3px;
+    /* display: block; */
+    /* background-color: var(--color-grey-700); 
+    */
+    background-color: white;
+}
 
 @media (min-width: 900px) {
     header h1 a {
         font-size: 2rem;    
     }
 
+    header nav {
+        display: flex;
+    }
+    
     header nav a {
         font-size: 1.125rem;    
         width: 5rem;
     }
+
 }
