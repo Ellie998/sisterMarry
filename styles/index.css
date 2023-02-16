@@ -8,12 +8,6 @@ body {
   --size-4: 1.5rem; 
 }
 
-header {
-  position: absolute;
-  width: 100%;
-  box-sizing: border-box;
-}
-
 body {
   background: radial-gradient(#c3715100, rgba(250, 214, 161, 0.103),rgba(233, 109, 126, 0.269));
 }
@@ -134,3 +128,5 @@ body {
     font-size: 1.25rem;
   }
 }
+
+/* add menu btn by myself after study again the lecture */
