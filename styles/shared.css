@@ -32,7 +32,7 @@ header a {
 }
 
 header h1 a {
-    font-family: 'Dancing Script', cursive;
+    font-family: cursive;
     font-size: 2rem;
     text-shadow: 4px 4px 4px rgba(240, 240, 237, 0.766);
     margin-left: 1.5rem;
@@ -125,7 +125,7 @@ header nav a:hover {
 }
 
 #sidebar main a:hover {
-    color:rgb(239, 175, 96);
+    color:rgb(239, 184, 96);
 }
 
 @media (min-width: 900px) {
