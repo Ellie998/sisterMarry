@@ -12,6 +12,10 @@ body {
   background: radial-gradient(#c3715100, rgba(250, 214, 161, 0.103),rgba(233, 109, 126, 0.269));
 }
 
+header h1 a {
+  font-family: cursive;
+}
+
 #main-top {
   background-image: url(../images/grad.svg);
   padding: 10rem 1.5rem 7rem 1.5rem;
