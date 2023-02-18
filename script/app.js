@@ -1,5 +1,5 @@
 let countElement = document.querySelector('#count');
-countElement.innerText = Date();
+// countElement.innerText = Date();
 
 function changePara(event){
   countElement.innerText = Date();
@@ -8,8 +8,20 @@ function changePara(event){
   console.dir(countElement);
 }
 
-countElement.addEventListener('click',changePara);
+function diffDay(){
+  const masTime = new Date("2023-04-23 12:00");
+  const todayTime = new Date();
+  
+  const diff = masTime - todayTime;
+  const diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const diffHour = Math.floor(diff / (1000 * 60 * 60)) % 24;
+  const diffMin = Math.floor(diff / (1000 * 60)) % 60;
+  const diffSec = Math.floor(diff / (1000)) % 60;
 
-// 현재 시간 실시간으로 보이도록 하기
-// D-day 계산하기
-// D-day counter로 변경하기
+  const result = `${diffDay}일 ${diffHour}시간 ${diffMin}분 ${diffSec}초 남았습니다.`;
+
+  countElement.textContent = result;
+}
+
+diffDay();
+setInterval(diffDay, 1000);
