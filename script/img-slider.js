@@ -36,3 +36,14 @@ function changeImgSlider(event){
   countImg = listElement.dataset.sliderNum;
   changeImg();
 }
+
+function imgModal(){
+  modalBackgroundElement.classList.add('modal');
+  imgElement.classList.add('modal');
+}
+
+function backgroundModal(){
+  modalBackgroundElement.classList.remove('modal');
+  imgElement.classList.remove('modal');
+
+}
