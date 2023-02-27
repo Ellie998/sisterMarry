@@ -1,27 +1,13 @@
+let countImg = 0;
+
 let countElement = document.querySelector('#count');
-// countElement.innerText = Date();
 
-function changePara(event){
-  countElement.innerText = Date();
-  console.log('cilcked!');
-  console.log(Date());
-  console.dir(countElement);
-}
+const backBtnElement = document.getElementById('btn-back');
+const nextBtnElement = document.getElementById('btn-next');
+const imgElement = document.getElementById('img');
 
-function diffDay(){
-  const masTime = new Date("2023-04-23 12:00");
-  const todayTime = new Date();
-  
-  const diff = masTime - todayTime;
-  const diffDay = Math.floor(diff / (1000 * 60 * 60 * 24));
-  const diffHour = Math.floor(diff / (1000 * 60 * 60)) % 24;
-  const diffMin = Math.floor(diff / (1000 * 60)) % 60;
-  const diffSec = Math.floor(diff / (1000)) % 60;
+const sliderElement = document.querySelector('#slider ol');
 
-  const result = `${diffDay}일 ${diffHour}시간 ${diffMin}분 ${diffSec}초 남았습니다.`;
-
-  countElement.textContent = result;
-}
-
-diffDay();
-setInterval(diffDay, 1000);
+backBtnElement.addEventListener('click',changeImgBack);
+nextBtnElement.addEventListener('click',changeImgNext);
+sliderElement.addEventListener('click',changeImgSlider);
